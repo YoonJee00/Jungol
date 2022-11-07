@@ -11,9 +11,11 @@ public class Main {
 		
 		for (;;) {
 			int num = sc.nextInt();
+			sum += num;
 			
 			if (num >= 100) {
-				
+				System.out.println(sum);
+				break;
 			}
 		}
 		
