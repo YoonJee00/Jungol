@@ -8,7 +8,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		int[] a = new int[10];
 
-		int min = a[0];
+		int min = Integer.MAX_VALUE;
 		for (int i = 0; i < a.length; i++) {
 			a[i] = sc.nextInt();
 
