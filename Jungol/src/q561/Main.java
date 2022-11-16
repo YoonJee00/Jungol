@@ -13,21 +13,21 @@ public class Main {
 		for (int i = 0; i < num.length; i++) {
 			num[i] = sc.nextInt();
 
-			if (num[i] < 100) {
-				if (max < num[i]) {
-					max = num[i];
-				} else {
-					max = 100;
-				}
-			} else if (num[i] >= 100) {
-				if (min > num[i]) {
-					min = num[i];
-				}
+			if (max < num[i] && num[i] < 100) {
+				max = num[i];
+			} 
+			if (num[i] < min && num[i] >= 100) {
+				min = num[i];
 			}
+		}
+		
+		if (max == Integer.MIN_VALUE) {
+			max = 100;
+		}
+		if (min == Integer.MAX_VALUE) {
+			min = 100;
 		}
 		sc.close();
 		System.out.println(max + " " + min);
-
 	}
-
 }

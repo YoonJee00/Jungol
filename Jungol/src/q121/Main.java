@@ -1,4 +1,4 @@
-package q540;
+package q121;
 
 import java.util.Scanner;
 
@@ -9,10 +9,12 @@ public class Main {
 		int num = sc.nextInt();
 		sc.close();
 
-		if (num % 3 == 0) {
-			System.out.println(num / 3);
-		} else if (num == -1) {
-
+		if (num < 0) {
+			System.out.println("minus");
+		} else if (num > 0) {
+			System.out.println("plus");
+		} else {
+			System.out.println("zero");
 		}
 
 	}
