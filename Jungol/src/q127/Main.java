@@ -15,7 +15,7 @@ public class Main {
 			if (0 <= num && num < 101) {
 				count++;
 				sum += num;
-			} else if (101 <= num) {
+			} else if (num < 0 || 101 <= num) {
 				sc.close();
 				break;
 			}
