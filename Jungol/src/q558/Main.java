@@ -13,10 +13,11 @@ public class Main {
 			a[i] = sc.nextInt();
 
 			if (a[i] == 0) {
+				sc.close();
 				break;
 			}
 		}
-		
+
 		for (int i = b; i > a.length; i--) {
 			System.out.print(a[i] + " ");
 		}
