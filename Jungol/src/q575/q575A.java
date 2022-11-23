@@ -4,9 +4,13 @@ import java.util.Scanner;
 
 public class q575A {
 	public int kpow(int a, int b) {
-		int res = 2;
+		int res = a;
 		for (int i = 1; i < b; i++) {
 			res *= a;
+		}
+
+		if (b == 0) {
+			return 1;
 		}
 		return res;
 	}
