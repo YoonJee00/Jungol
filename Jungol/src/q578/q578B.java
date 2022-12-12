@@ -8,8 +8,8 @@ class Gugudan {
 
 	public void input() {
 		Scanner sc = new Scanner(System.in);
-		int inp1 = sc.nextInt();
-		int inp2 = sc.nextInt();
+		inp1 = sc.nextInt();
+		inp2 = sc.nextInt();
 		sc.close();
 	}
 
